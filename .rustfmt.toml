@@ -1,0 +1,4 @@
+max_width = 120
+indent_style = "Visual"
+trailing_comma = "Never"
+trailing_semicolor = "Always"

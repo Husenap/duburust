@@ -1,0 +1,12 @@
+[package]
+name = "duburust"
+version = "0.1.0"
+authors = ["Hussein Taher <hussein_taher@outlook.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+gl = "0.14.0"
+glfw = "0.34.0"
+ferris-says = "0.1"
