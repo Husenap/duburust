@@ -8,34 +8,7 @@ use std::sync::mpsc::Receiver;
 const SRC_WIDTH: u32 = 800;
 const SRC_HEIGHT: u32 = 600;
 
-trait Foo {
-    fn test(&self) -> String;
-}
-
-impl Foo for String {
-    fn test(&self) -> String {
-        return format!("from String: {}", self);
-    }
-}
-impl Foo for f64 {
-    fn test(&self) -> String {
-        return format!("from f64: {}", self);
-    }
-}
-impl Foo for f32 {
-    fn test(&self) -> String {
-        return format!("from f32: {}", self);
-    }
-}
-
 fn main() {
-    let x: f32 = 5.3;
-    let y: f64 = 5.3;
-    let z: String = "안녕하세요".to_string();
-    println!("{}", Foo::test(&x));
-    println!("{}", Foo::test(&y));
-    println!("{}", Foo::test(&z));
-
     let mut glfw = glfw::init(glfw::FAIL_ON_ERRORS).unwrap();
 
     glfw.window_hint(glfw::WindowHint::ContextVersion(4, 1));
